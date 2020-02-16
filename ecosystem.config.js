@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:InstantlyMoist/instagram-discord-bot.git',
       path : '/home/kyllian/instagram-discord-bot',
-      'post-deploy' : 'pm2 stop instagram-discord-bot && git pull && npm install && pm2 start /home/kyllian/instagram-discord-bot/ecosystem.config.js'
+      'post-deploy' : 'pm2 stop ecosystem.config.js && git pull && npm install && pm2 start /home/kyllian/instagram-discord-bot/ecosystem.config.js'
     }
   }
 };
