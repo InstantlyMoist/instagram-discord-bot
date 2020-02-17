@@ -2,8 +2,8 @@ module.exports = {
   apps : [{
     name: 'instagram-discord-bot',
     script: 'index.js',
-	"shutdown_with_message" : true,
-	watch: true,
+        "shutdown_with_message" : true,
+        watch: true,
     args: 'one two',
     instances: 1,
     autorestart: true,
