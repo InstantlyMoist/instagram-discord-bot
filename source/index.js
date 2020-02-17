@@ -6,6 +6,11 @@ const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity('dank memes', { type: 'WATCHING' });
+});
+
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
