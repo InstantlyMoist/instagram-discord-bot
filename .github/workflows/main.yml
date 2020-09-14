@@ -16,7 +16,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        password: $ {{ secrets.PASSWORD }}  
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           cd /home/${{ secrets.USERNAME }}/instagram-discord-bot
